@@ -13,12 +13,9 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white("           Caroline Deconinck"),
-  handle: chalk.white("bitandbang"),
-  shorthandle: chalk.white("bnb"),
-  work: chalk.white("Junior developer at Becode.org (::)"),
-  //   twitter: chalk.gray("https://twitter.com/") + chalk.cyan("bitandbang"),
-  //   mastodon: chalk.gray("https://mastodon.social/") + chalk.magenta("@bnb"),
+  name: chalk.white("caroline"),
+  handle: chalk.red("deconinck"),
+  work: chalk.white("Junior developer at Becode.org"),
   npm: chalk.gray("https://npmjs.com/") + chalk.red("caroline1123"),
   github: chalk.gray("https://github.com/") + chalk.green("Caroline1123"),
   linkedin:
@@ -27,8 +24,8 @@ const data = {
   //   web: chalk.cyan("https://bnb.im"),
   npx: `${chalk.red("npx")} ${chalk.white("caroline1123")}`,
   labelWork: chalk.white.bold("    Work:"),
-  labelTwitter: chalk.white.bold(" Twitter:"),
-  labelMastodon: chalk.white.bold("Mastodon:"),
+  // labelTwitter: chalk.white.bold(" Twitter:"),
+  // labelMastodon: chalk.white.bold("Mastodon:"),
   labelnpm: chalk.white.bold("     npm:"),
   labelGitHub: chalk.white.bold("  GitHub:"),
   labelLinkedIn: chalk.white.bold("LinkedIn:"),
@@ -38,14 +35,12 @@ const data = {
 
 // Actual strings we're going to output
 const newline = "\n";
-const heading = `${data.name} / ${data.handle} / ${data.shorthandle}`;
+const heading = `${data.name} / ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
-const twittering = `${data.labelTwitter}  ${data.twitter}`;
-// const mastodoning = `${data.labelMastodon}  ${data.mastodon}`;
 const npming = `${data.labelnpm}  ${data.npm}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
-const webing = `${data.labelWeb}  ${data.web}`;
+// const webing = `${data.labelWeb}  ${data.web}`;
 const carding = `${data.labelCard}  ${data.npx}`;
 
 // Put all our output together into a single variable so we can use boxen effectively
@@ -55,18 +50,14 @@ const output =
   newline + // Add one whole blank line
   working +
   newline + // data.labelWork + data.work
-  twittering +
-  newline + // data.labelTwitter + data.twitter
-  mastodoning +
-  newline + // data.labelTwitter + data.twitter
   npming +
   newline + // data.labelnpm + data.npm
   githubing +
   newline + // data.labelGitHub + data.github
   linkedining +
   newline + // data.labelLinkedIn + data.linkedin
-  webing +
-  newline +
+  // webing +
+  // newline +
   newline + // data.labelWeb + data.web
   carding; // data.labelCard + data.npx
 
