@@ -2,7 +2,7 @@
 
 ## NPM
 
-`npx caroline1123`
+`npx carolinebecode`
 
 ## Original concept
 
